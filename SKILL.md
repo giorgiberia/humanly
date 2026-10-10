@@ -1,11 +1,22 @@
 ---
 name: humanly
-description: Apply the Humanly H0-H3 standard to agent-enabled apps so people can use core features without AI, understand agent activity, approve consequential actions, intervene in automation, and control their data. Use when creating, reviewing, or updating HUMANLY.md; auditing human accessibility, action transparency, cancellation, approval, history, export, or deletion; reviewing AI features that affect human access or control; or adding Humanly guidance to AGENTS.md.
+description: Apply the Humanly H0-H3 standard to agent-enabled apps so people can use core features without AI, understand agent activity, approve consequential actions, intervene in automation, and control their data. Use when initializing Humanly in a project; creating, reviewing, or updating HUMANLY.md; auditing human accessibility, action transparency, cancellation, approval, history, export, or deletion; reviewing AI features that affect human access or control; or adding Humanly guidance to AGENTS.md.
 ---
 
 # Humanly
 
 Build for agents. Keep humans capable, informed, and in control. Treat H0-H3 as a **proposed, self-assessed** standard, not a certification. Consult [Humanly v0.3 draft](references/standard-v0.3-draft.md) for complete requirements.
+
+## Initialize a project
+
+Use this workflow for requests such as "Initialize Humanly", "Set up Humanly in this project", or "Create HUMANLY.md".
+
+1. Locate the current project root. Read its structure, README, existing AGENTS.md, and relevant code/tests to identify core tasks, manual interfaces, agent functionality, and data controls. Inspect only what is needed for the declaration.
+2. Check for `HUMANLY.md` at that root. If it exists (including a symlink or other existing entry), preserve it unchanged, explain that Humanly is already initialized, and stop initialization. Do not run declaration updates or fixes as part of this request.
+3. If missing, use the existing [HUMANLY template](assets/HUMANLY-template.md) from this skill to create `HUMANLY.md` in the project root. Use exclusive creation (for example, Python `open(path, "x")`); if another process creates it first, preserve it and report that initialization is already complete. Never overwrite an existing declaration.
+4. Populate the template with discovered scope, interfaces, contacts, and evidence only. Record the actual inspection date; do not invent maintainers, URLs, functionality, or test results. Replace unknown fields with **Unassessed** and remove the template note. Keep `level: "unassessed"` unless all applicable checks for a cumulative level have reproducible evidence.
+5. In the template's Verification and Known limitations sections, record H0-H3 findings using the existing **Pass / Fail / Unknown / N/A** convention: verified requirements are Pass with evidence; confirmed missing requirements are Fail; unverified requirements are Unknown (**Unassessed**). Explain N/A. H0 describes H1 not demonstrated; do not infer it solely from missing tests. Check boxes only for verified requirements, and never claim H1, H2, or H3 without evidence for that level and its prerequisites.
+6. Use the existing declaration checker for text validation when available; it does not verify compliance. Briefly report the created path, discovered scope, verified/missing/unassessed findings, and workflows or gaps to review next. Initialization creates only `HUMANLY.md`; other project changes require a separate request.
 
 ## Inspect first
 
