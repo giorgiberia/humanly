@@ -4,13 +4,36 @@
 
 Humanly is a lightweight, self-assessed standard and coding-agent skill for apps that use AI agents without leaving people behind.
 
-## Install the coding-agent skill
+
+## Install Humanly
+
+Give your AI coding agent the ability to build software
+that remains accessible, transparent, and human-controlled.
 
 ```bash
 npx skills add giorgiberia/humanly
 ```
 
-For example, ask your agent: **"Use Humanly to review this app against H2 and identify any gaps."**
+### For OpenAI Codex
+
+Install globally across your projects:
+
+```bash
+npx skills add giorgiberia/humanly -g -a codex
+```
+
+### What Humanly checks
+
+- H0 — Agent Only
+- H1 — Human Access
+- H2 — Human Control
+- H3 — Human Ownership
+
+### Example
+
+Ask your coding agent:
+
+"Use Humanly to review this project for H2 compliance."
 
 ## Humanly levels
 
