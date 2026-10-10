@@ -1,5 +1,7 @@
 # Humanly
 
+[![skills.sh](https://skills.sh/b/giorgiberia/humanly)](https://skills.sh/giorgiberia/humanly)
+
 **Built for agents. Made for humans.**
 
 Humanly is a lightweight, self-assessed standard and coding-agent skill for apps that use AI agents without leaving people behind.
