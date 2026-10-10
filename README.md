@@ -12,8 +12,6 @@ npx skills add giorgiberia/humanly
 
 For example, ask your agent: **"Use Humanly to review this app against H2 and identify any gaps."**
 
-The command is an example for **after** you publish this repository publicly. Replace `giorgiberia` with the actual owner. You do **not** need to publish an npm package to use `npx skills add`.
-
 ## Humanly levels
 
 | Level | Name | What it means |
