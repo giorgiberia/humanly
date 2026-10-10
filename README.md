@@ -50,6 +50,16 @@ Levels build on one another. They are **self-assessed**; this is not a certifica
 
 ## Add Humanly to a project
 
+After installing the skill, ask your coding agent in the project:
+
+- "Initialize Humanly"
+- "Set up Humanly in this project"
+- "Create HUMANLY.md"
+
+The agent inspects the project and creates a root `HUMANLY.md` using the existing template, populated only with discovered information. Existing declarations are preserved unchanged. Verified, missing, and unverified requirements are recorded with evidence; unknown information stays **Unassessed**, and H1-H3 are not claimed without evidence. The agent reports what was created and what to review next.
+
+You can also set up the declaration manually:
+
 1. Copy [`assets/HUMANLY-template.md`](assets/HUMANLY-template.md) to your project's root as `HUMANLY.md`.
 2. Test the relevant workflows; choose an honest H0-H3 level or leave `unassessed`.
 3. Optionally add [`assets/AGENTS-snippet.md`](assets/AGENTS-snippet.md) to the project's `AGENTS.md`.
