@@ -1,0 +1,4 @@
+interface:
+  display_name: "Humanly"
+  short_description: "Keep agent-powered software human-accessible and controllable"
+  brand_color: "#286F74"
